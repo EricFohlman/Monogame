@@ -1,7 +1,8 @@
-
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace Template
 {
@@ -13,6 +14,11 @@ namespace Template
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         //KOmentar
+        Texture2D Max;
+        Texture2D ;
+        Vector2 xwingPos = new Vector2(100, 300);
+        List<Vector2> xwingBulletPos = new List<Vector2>();
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -79,6 +85,7 @@ namespace Template
             // TODO: Add your drawing code here.
 
             base.Draw(gameTime);
+
         }
     }
 }
